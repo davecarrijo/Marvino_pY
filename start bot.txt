@@ -1,0 +1,1 @@
+py .\main.py 5374791073:AAGOVmkr_ij9h2tO5jKq92gi7w1MoSCmn98, 5180737180
