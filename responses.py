@@ -9,7 +9,7 @@ def sample_responses(input_text):
     if user_message in ("quem é você?"):
         return "Eu sou um bot"
 
-    if user_message in ("serova"):
+    if user_message in ("/serova"):
         return "para de ser negro, o CARIOCA"
 
     if user_message in ("tempo","time"):
