@@ -18,7 +18,7 @@ class Archivist(object):
         read_only=False,
     ):
         if chatdir is None or len(chatdir) == 0:
-            chatdir = ""
+            chatdir = ".\ "
         elif chatext is None:  # Can be len(chatext) == 0
             raise ValueError("Chatlog file extension is invalid")
         self.logger = logger
@@ -32,11 +32,11 @@ class Archivist(object):
 
     # Formats and returns a chat folder path
     def chat_folder(self, *formatting, **key_format):
-        return (self.chatdir + "/chat_{tag}").format(*formatting, **key_format)
+        return (self.chatdir + "\chat_{tag}").format(*formatting, **key_format)
 
     # Formats and returns a chat file path
     def chat_file(self, *formatting, **key_format):
-        return (self.chatdir + "/chat_{tag}/{file}{ext}").format(
+        return (self.chatdir + "\chat_{tag}\{file}{ext}").format(
             *formatting, **key_format
         )
 
